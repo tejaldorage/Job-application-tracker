@@ -31,8 +31,33 @@ A sleek Flask web app to organize, monitor, and take control of your job search.
 
 ## 🖼️ Screenshot
 
-###![Screenshot 2025-06-30 135922](https://github.com/user-attachments/assets/413c2f04-2047-45d2-9f77-973c2195e0d5)
+### Home Page
+![Screenshot 2025-06-30 135922](https://github.com/user-attachments/assets/413c2f04-2047-45d2-9f77-973c2195e0d5)
  
+
+### Admin Login
+
+![Screenshot 2025-06-30 135953](https://github.com/user-attachments/assets/ba787899-ca68-4943-b0b7-564691908acc)
+
+
+### Admin Logout
+
+![Screenshot 2025-06-30 140210](https://github.com/user-attachments/assets/85b70a21-6f09-425a-8406-abbc1d4a9cd8)
+
+### Track Application
+
+![Screenshot 2025-06-30 140010](https://github.com/user-attachments/assets/5c216f9b-1dfa-4c0a-9623-8c01de3bf40a)
+
+
+### Add New Application
+
+![Screenshot 2025-06-30 140054](https://github.com/user-attachments/assets/73bfe27d-7ea7-488c-b1fc-fdbf56dd6a41)
+
+
+
+### Application List
+
+![Screenshot 2025-06-30 140136](https://github.com/user-attachments/assets/4e5160a5-2e8f-45b8-b858-bee53671df8c)
 
 
 
