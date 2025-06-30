@@ -115,6 +115,7 @@ Password: password
 
 🗂️ Project File Structure
 A clean, hierarchical view of your project’s layout. Keeping it organized and easy to scan:
+```
 ├── app.py                   # Main Flask application
 ├── applications.xlsx        # Data storage (auto-generated)
 ├── requirements.txt         # Python dependencies
@@ -128,7 +129,7 @@ A clean, hierarchical view of your project’s layout. Keeping it organized and 
 │   └── admin.html
 └── static/                  # Static assets (CSS, JS, images)
     └── (your styles & scripts)
-
+```
 
 🧩 Dependencies – What Powers This App
 A curated stack of libraries that fuel your Job Application Tracker with functionality and flair:
