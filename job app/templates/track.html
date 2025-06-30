@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Track Application{% endblock %}
+{% block content %}
+  <div class="container py-4">
+    <h2 class="text-center mb-4">Track Application</h2>
+
+    <form method="post" class="mb-4">
+      <div class="mb-3">
+        <label for="id" class="form-label fw-semibold">Application ID</label>
+        <select class="form-select form-select-lg" id="id" name="id" required>
+          <option value="" disabled {% if not selected %}selected{% endif %}>Select ID...</option>
+          {% for id in apps_list %}
+            <option value="{{ id }}" {% if selected == id %}selected{% endif %}>{{ id }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-lg">Track</button>
+      </div>
+    </form>
+
+    {% if app %}
+      <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white fw-bold">
+          Details for ID {{ app['Application ID'] }}
+        </div>
+        <div class="card-body">
+          <p><strong>Company Name:</strong> {{ app['Company Name'] }}</p>
+          <p><strong>Job Title:</strong> {{ app['Job Title'] }}</p>
+          <p><strong>Status:</strong> 
+            <span class="badge text-bg-info">{{ app['Status'] }}</span>
+          </p>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .form-select-lg {
+      border-radius: 0.5rem;
+    }
+    .card {
+      border-radius: 0.75rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      font-size: 1.1rem;
+    }
+    .badge {
+      font-size: 0.9rem;
+    }
+  </style>
+{% endblock %}

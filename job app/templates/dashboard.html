@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+  <h2 class="text-center mb-4">Status Dashboard</h2>
+  <div class="row g-4">
+    {% for status, count in stats.items() %}
+      <div class="col-6 col-md-3">
+        <div class="card text-center stat-card h-100">
+          <div class="card-body d-flex flex-column justify-content-center">
+            <h5 class="card-title text-uppercase">{{ status }}</h5>
+            <p class="display-4 fw-bold mb-0">{{ count }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="text-center mt-4">
+    <a href="{{ url_for('list_apps') }}" class="btn btn-secondary btn-lg">View All Applications</a>
+  </div>
+
+  <style>
+    .stat-card {
+      border-radius: 0.75rem;
+      background: linear-gradient(135deg, #007bff33, #17a2b833);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+    }
+    .card-title {
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .display-4 {
+      color: #007bff;
+    }
+    .btn-secondary {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+    }
+  </style>
+{% endblock %}

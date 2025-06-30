@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}Edit Application{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-center my-5">
+  <div class="card shadow-lg rounded-lg p-4" style="max-width: 500px; width: 100%;">
+    <h2 class="text-center mb-4">Edit Application</h2>
+    <form method="post" novalidate>
+      <div class="mb-3">
+        <label for="id" class="form-label fw-semibold">Application ID</label>
+        <input type="text" class="form-control form-control-lg" id="id" name="id"
+               value="{{ app['Application ID'] }}" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="company" class="form-label fw-semibold">Company Name</label>
+        <input type="text" class="form-control form-control-lg" id="company" name="company"
+               value="{{ app['Company Name'] }}" required>
+      </div>
+      <div class="mb-3">
+        <label for="title" class="form-label fw-semibold">Job Title</label>
+        <input type="text" class="form-control form-control-lg" id="title" name="title"
+               value="{{ app['Job Title'] }}" required>
+      </div>
+      <div class="mb-4">
+        <label for="status" class="form-label fw-semibold">Status</label>
+        <select class="form-select form-select-lg" id="status" name="status" required>
+          <option {% if app['Status'] == 'Applied' %}selected{% endif %}>Applied</option>
+          <option {% if app['Status'] == 'Interview' %}selected{% endif %}>Interview</option>
+          <option {% if app['Status'] == 'Offer' %}selected{% endif %}>Offer</option>
+          <option {% if app['Status'] == 'Rejected' %}selected{% endif %}>Rejected</option>
+        </select>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-success btn-lg">Update Application</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style>
+  /* Container styling */
+  body {
+    background-color: #f8f9fa;
+  }
+  /* Card styling with hover effect */
+  .card {
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  /* Input and select sizing */
+  .form-control-lg, .form-select-lg {
+    border-radius: .5rem;
+  }
+  /* Text weight enhancements */
+  .fw-semibold {
+    font-weight: 600;
+  }
+  /* Button styling */
+  .btn-lg {
+    border-radius: .5rem;
+    padding: .75rem;
+  }
+</style>
+{% endblock %}
