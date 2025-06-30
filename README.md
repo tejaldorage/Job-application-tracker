@@ -14,18 +14,18 @@ A sleek Flask web app to organize, monitor, and take control of your job search.
 
 ---
 ## ⭐ Usage Flow
-Home (Dashboard) – Your project control center with instant status counts.
-Add – Submit new applications swiftly.
-List – Bulk view, edit entries, or purge unwanted ones.
-Track – Lookup specific applications by ID in one click.
-Admin Panel – Log in using admin / password to protect your data.
+- Home (Dashboard) – Your project control center with instant status counts.
+- Add – Submit new applications swiftly.
+- List – Bulk view, edit entries, or purge unwanted ones.
+- Track – Lookup specific applications by ID in one click.
+- Admin Panel – Log in using admin / password to protect your data.
 
 ---
 
 ## 🔧 Dependencies
-Flask – Web framework
-pandas – Efficient data handling
-openpyxl – Excel read/write support  
+- Flask – Web framework
+- pandas – Efficient data handling
+- openpyxl – Excel read/write support  
 
 ---
 
