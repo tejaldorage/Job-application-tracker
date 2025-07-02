@@ -98,33 +98,33 @@ This project is MIT licensed—see the LICENSE file for details.
 
 # 🚀 Installation & Prerequisites
 ## 🎯 Prerequisites
-Python 3.7+ — your runtime environment
+1. Python 3.7+ — your runtime environment
 
-pip — Python package installer
+2. pip — Python package installer
 
-(Optional) virtual environment tool like venv or virtualenv for dependency isolation
+3. (Optional) virtual environment tool like venv or virtualenv for dependency isolation
 
 ## 💻 Step-by-Step Setup
- Clone the repository
+1. Clone the repository
 git clone https://github.com/tejaldorage/Job-application-tracker
 cd flask-job-tracker
 
 
- Create and activate a virtual environment (recommended)
+2. Create and activate a virtual environment (recommended)
 python3 -m venv venv
 source venv/bin/activate     # macOS/Linux
 venv\Scripts\activate        # Windows
 
 
- Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
 
- Start the server
+4. Start the server
 python job tracker.py
 
 
- Open in browser
+5. Open in browser
 Visit http://127.0.0.1:5000/ to start using the app.
 
 
