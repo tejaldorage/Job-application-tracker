@@ -92,3 +92,39 @@ A sleek Flask web app to organize, monitor, and take control of your job search.
 
 ## 📜 License
 This project is MIT licensed—see the LICENSE file for details.
+
+
+:
+
+## 🚀 Installation & Prerequisites
+# 🎯 Prerequisites
+Python 3.7+ — your runtime environment
+
+pip — Python package installer
+
+(Optional) virtual environment tool like venv or virtualenv for dependency isolation
+
+# 💻 Step-by-Step Setup
+# Clone the repository
+git clone https://github.com/yourusername/flask-job-tracker.git
+cd flask-job-tracker
+
+
+# Create and activate a virtual environment (recommended)
+python3 -m venv venv
+source venv/bin/activate     # macOS/Linux
+venv\Scripts\activate        # Windows
+
+
+# Install dependencies
+pip install -r requirements.txt
+
+
+# Start the server
+python job tracker.py
+
+
+# Open in browser
+Visit http://127.0.0.1:5000/ to start using the app.
+
+
