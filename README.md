@@ -106,7 +106,7 @@ pip — Python package installer
 
 ## 💻 Step-by-Step Setup
  Clone the repository
-git clone https://github.com/yourusername/flask-job-tracker.git
+git clone https://github.com/tejaldorage/Job-application-tracker
 cd flask-job-tracker
 
 
